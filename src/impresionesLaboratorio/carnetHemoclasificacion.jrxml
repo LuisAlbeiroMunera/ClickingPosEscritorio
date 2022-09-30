@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="396" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="15" bottomMargin="15" uuid="c7cbddfa-c844-4f7c-915b-9058308fdebb">
+	<property name="ireport.zoom" value="1.000000000000005"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="informacionLegalClick" class="java.lang.String"/>
+	<parameter name="usuario" class="java.lang.String"/>
+	<parameter name="firma" class="java.io.InputStream"/>
+	<parameter name="urlImagen" class="java.io.InputStream"/>
+	<parameter name="info" class="java.lang.String"/>
+	<parameter name="pie" class="java.lang.String"/>
+	<parameter name="id" class="java.lang.String"/>
+	<parameter name="edad" class="java.lang.String"/>
+	<parameter name="fecha" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[Select * from hemoclasificacion where IdHemoclasificacion = $P{id}]]>
+	</queryString>
+	<field name="IdHemoclasificacion" class="java.lang.String"/>
+	<field name="cedula" class="java.lang.String"/>
+	<field name="numeroOrden" class="java.lang.String"/>
+	<field name="remitido" class="java.lang.String"/>
+	<field name="fecha" class="java.sql.Timestamp"/>
+	<field name="resultados" class="java.lang.String"/>
+	<field name="tecnica" class="java.lang.String"/>
+	<field name="observaciones" class="java.lang.String"/>
+	<field name="telefono" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="nombreEps" class="java.lang.String"/>
+	<field name="sexo" class="java.lang.String"/>
+	<field name="grupo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="320">
+			<rectangle radius="10">
+				<reportElement x="112" y="56" width="323" height="180" uuid="2ac7e009-553c-4675-ae2b-99780c7ca0a9"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="112" y="163" width="323" height="73" backcolor="#CCCCCC" uuid="ac6d8891-e96b-4ab5-b0f4-ff455f3a8ccb"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="212" y="192" width="56" height="12" uuid="a9d22ca0-abbd-441b-9d2b-6ccc90e27a95"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sexo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="133" y="178" width="78" height="13" uuid="33a6ba38-70bd-4630-85de-dd5decc502d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTIFICACIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="212" y="178" width="56" height="13" uuid="f2f3c217-70ec-4e98-a364-1d52dcdb0c3c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SEXO]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="133" y="192" width="78" height="12" uuid="a978d64a-ac81-490f-9db6-f0be5f4f8f43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cedula}]]></textFieldExpression>
+			</textField>
+			<image isUsingCache="true" isLazy="true">
+				<reportElement mode="Opaque" x="119" y="66" width="119" height="89" backcolor="#FFFFFF" uuid="a832f577-c748-4529-8e76-643a9648082f"/>
+				<imageExpression><![CDATA[$P{urlImagen}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="269" y="192" width="144" height="12" uuid="e47c0760-c878-4f42-b001-ee98ef615658"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreEps}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="269" y="178" width="144" height="13" uuid="edf6140e-9ef2-402f-bb11-3830ae990973"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EPS]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="242" y="66" width="193" height="29" uuid="56fa5233-4814-44c7-b297-bd8d0f6278f1"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="255" y="103" width="54" height="19" uuid="2c7b3acf-3df2-49a5-aeed-437f3f6fb24e"/>
+				<textElement>
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GRUPO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="122" width="46" height="19" uuid="d06a5ab3-c49b-48e7-a2eb-af0ed6422fd0"/>
+				<textElement textAlignment="Right">
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RH:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="309" y="103" width="110" height="19" uuid="a7c86d4b-a2db-4c72-826c-903aa393e7e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grupo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="122" width="110" height="19" uuid="3f8c631e-3368-4832-a9df-e0e74c9a4802"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{resultados}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="132" y="177" width="281" height="1" uuid="ae83b251-8cfd-44d2-8889-db4fdc041f92"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="112" y="216" width="323" height="20" uuid="ddb5c43e-38c3-4c7b-994f-00f53268f68a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{informacionLegalClick}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="132" y="191" width="281" height="1" uuid="28279589-b62f-4198-a4d0-ec66499af27c"/>
+			</line>
+			<line>
+				<reportElement x="133" y="204" width="281" height="1" uuid="933aed21-008b-4987-9db0-cdab59cf94c8"/>
+			</line>
+			<line>
+				<reportElement x="413" y="177" width="1" height="28" uuid="d3361566-cd3b-402a-b8e2-38999f2e0270"/>
+			</line>
+			<line>
+				<reportElement x="132" y="177" width="1" height="28" uuid="0fdbad4b-3074-4ccc-967f-1d2f7a6345af"/>
+			</line>
+			<line>
+				<reportElement x="211" y="177" width="1" height="28" uuid="06b637c0-4ba8-48d0-abdb-f084837650a1"/>
+			</line>
+			<line>
+				<reportElement x="268" y="177" width="1" height="28" uuid="eccae18c-75be-487a-b8f6-8229b9c0b0b2"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `bdclick5`.`bdabonos`.`id` AS `id`,`bdclick5`.`bdabonos`.`fechaFactura` AS `fechaFactura`,substr(`bdclick5`.`bdabonos`.`comprobante`,6) AS `comprobante2` from `bdclick5`.`bdabonos`)
+md5=789ebff9957f758a78206b0354c78717
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:46:45
+create-version=2
+source=(select `bdabonos`.`id` AS `id`,`bdabonos`.`fechaFactura` AS `fechaFactura`,substr(`bdabonos`.`comprobante`,6) AS `comprobante2` from `bdabonos`)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `bdclick5`.`bdabonos`.`id` AS `id`,`bdclick5`.`bdabonos`.`fechaFactura` AS `fechaFactura`,substr(`bdclick5`.`bdabonos`.`comprobante`,6) AS `comprobante2` from `bdclick5`.`bdabonos`)
+mariadb-version=100135

@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick5`.`bdcomanda`.`congelada` AS `congelada`,`bdclick5`.`bdcomanda`.`factura` AS `factura`,`bdclick5`.`bdcomanda`.`pedido` AS `pedido`,`bdclick5`.`bdcomanda`.`cod` AS `cod`,`bdclick5`.`bdcomanda`.`producto` AS `producto`,sum(`bdclick5`.`bdcomanda`.`cant`) AS `cant1`,\'\' AS `opciones`,`bdclick5`.`bdcomanda`.`consecutivo` AS `consecutivo` from `bdclick5`.`bdcomanda` group by `bdclick5`.`bdcomanda`.`congelada`,`bdclick5`.`bdcomanda`.`factura`,`bdclick5`.`bdcomanda`.`pedido`,`bdclick5`.`bdcomanda`.`cod`,`bdclick5`.`bdcomanda`.`producto`,\'\',\'\'
+md5=46a06d6824eef1d9aabaf9fc77d9d135
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:46:48
+create-version=2
+source=select `bdcomanda`.`congelada` AS `congelada`,`bdcomanda`.`factura` AS `factura`,`bdcomanda`.`pedido` AS `pedido`,`bdcomanda`.`cod` AS `cod`,`bdcomanda`.`producto` AS `producto`,sum(`bdcomanda`.`cant`) AS `cant1`,\'\' AS `opciones`,`bdcomanda`.`consecutivo` AS `consecutivo` from `bdcomanda` group by `bdcomanda`.`congelada`,`bdcomanda`.`factura`,`bdcomanda`.`pedido`,`bdcomanda`.`cod`,`bdcomanda`.`producto`,\'\',\'\'
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick5`.`bdcomanda`.`congelada` AS `congelada`,`bdclick5`.`bdcomanda`.`factura` AS `factura`,`bdclick5`.`bdcomanda`.`pedido` AS `pedido`,`bdclick5`.`bdcomanda`.`cod` AS `cod`,`bdclick5`.`bdcomanda`.`producto` AS `producto`,sum(`bdclick5`.`bdcomanda`.`cant`) AS `cant1`,\'\' AS `opciones`,`bdclick5`.`bdcomanda`.`consecutivo` AS `consecutivo` from `bdclick5`.`bdcomanda` group by `bdclick5`.`bdcomanda`.`congelada`,`bdclick5`.`bdcomanda`.`factura`,`bdclick5`.`bdcomanda`.`pedido`,`bdclick5`.`bdcomanda`.`cod`,`bdclick5`.`bdcomanda`.`producto`,\'\',\'\'
+mariadb-version=100135

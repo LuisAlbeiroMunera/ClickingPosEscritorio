@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="216" pageHeight="216" columnWidth="216" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="db61d546-8297-4cca-9556-312d264ae2d0">
+	<property name="ireport.zoom" value="4.0"/>
+	<property name="ireport.x" value="31"/>
+	<property name="ireport.y" value="354"/>
+	<parameter name="info" class="java.lang.String"/>
+	<parameter name="placa" class="java.lang.String"/>
+	<parameter name="fecha" class="java.lang.String"/>
+	<parameter name="hora" class="java.lang.String"/>
+	<parameter name="informacionLegalClick" class="java.lang.String"/>
+	<parameter name="factura" class="java.lang.String"/>
+	<parameter name="fecha2" class="java.lang.String"/>
+	<parameter name="hora2" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<parameter name="tipo" class="java.lang.String"/>
+	<parameter name="tiempo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="216" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="10" width="216" height="65" uuid="910f1c6b-460d-4d0a-8790-49da4dffcbd2"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+					<font fontName="Calibri" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{info}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="36" y="100" width="46" height="12" uuid="5fc1965a-7e98-4965-b454-2ffc6a7f970a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Placa:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="112" width="46" height="12" uuid="f15eed73-05b0-4ec1-bacb-b1770bba5423"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Entrada:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="127" y="112" width="43" height="12" uuid="609cbb35-ccd2-4329-8731-5dc8b3b31801"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hora}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="83" y="112" width="41" height="12" uuid="ceec432e-fa9f-4202-bec6-3738d5b808a0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="83" y="100" width="87" height="12" uuid="20ec3199-e8b9-4df3-86cf-603ffd479ac6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{placa}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="10" y="187" width="196" height="20" uuid="3856d41b-c094-40f8-b8fd-0fe98fa73318"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{informacionLegalClick}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="36" y="124" width="46" height="12" uuid="67eb89e4-859e-4ffe-903f-beeb42797b6c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Salida:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="74" width="46" height="12" uuid="721982d3-b3f3-40d2-9b57-0ff926cb93d5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Factura #]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="83" y="74" width="100" height="12" uuid="edcdd672-85fb-4c42-a1f4-bf9fb8888c59"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{factura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="83" y="124" width="41" height="12" uuid="7fb367b0-903d-4359-9b95-86a083cedfb1"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fecha2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="124" width="43" height="12" uuid="58947804-a441-481f-a1bf-3364579a964b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hora2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="36" y="148" width="57" height="20" uuid="31057cc2-2b2a-4979-a081-eacf603db18c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total a pagar:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="148" width="87" height="20" uuid="15cb9fd4-5935-4b38-a148-c48c470c86e0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="58" y="173" width="112" height="12" uuid="86b962d1-cf3e-4ab4-afbe-f7ea63826579"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[¡GRACIAS POR SU VISITA!]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="88" width="46" height="12" uuid="34be0e1c-1d35-4fce-a728-da205d61a6b4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="83" y="88" width="100" height="12" uuid="f3c473bf-aef1-4708-ae46-bda81d9d8537"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tipo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

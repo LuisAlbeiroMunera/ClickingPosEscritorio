@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick`.`bdproductos`.`Codigo` AS `Codigo`,`bdclick`.`bdproductos`.`idSistema` AS `idSistema`,`bdclick`.`bdproductos`.`Descripcion` AS `Descripcion`,`bdclick`.`bddetalleproductos`.`cantidad` AS `cantidad`,`bdclick`.`bddetalleproductos`.`imei` AS `imei`,`bdclick`.`bddetalleproductos`.`color` AS `color`,`bdclick`.`bddetalleproductos`.`talla` AS `talla`,`bdclick`.`bddetalleproductos`.`lote` AS `lote`,`bdclick`.`bddetalleproductos`.`fechaVencimiento` AS `fechaVencimiento`,`bdclick`.`bddetalleproductos`.`temperatura` AS `temperatura`,`bdclick`.`bddetalleproductos`.`estado` AS `estado`,`bdclick`.`bddetalleproductos`.`bodega` AS `bodega`,`bdclick`.`bdproductos`.`Proveedor` AS `Proveedor` from (`bdclick`.`bddetalleproductos` left join (`bdclick`.`bdproductos` left join `bdclick`.`bdgrupo` on((`bdclick`.`bdgrupo`.`codigo` = `bdclick`.`bdproductos`.`grupo`))) on((`bdclick`.`bdproductos`.`idSistema` = `bdclick`.`bddetalleproductos`.`codProducto`))) where ((`bdclick`.`bddetalleproductos`.`estado` = \'DISPONIBLE\') or (`bdclick`.`bddetalleproductos`.`estado` = \'PRESTADO\'))
+md5=bf845b7f420f8448bbbd8191093a5012
+updatable=0
+algorithm=0
+definer_user=click
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-09-20 15:58:24
+create-version=2
+source=select `bdproductos`.`Codigo` AS `Codigo`,`bdproductos`.`idSistema` AS `idSistema`,`bdproductos`.`Descripcion` AS `Descripcion`,`bddetalleproductos`.`cantidad` AS `cantidad`,`bddetalleproductos`.`imei` AS `imei`,`bddetalleproductos`.`color` AS `color`,`bddetalleproductos`.`talla` AS `talla`,`bddetalleproductos`.`lote` AS `lote`,`bddetalleproductos`.`fechaVencimiento` AS `fechaVencimiento`,`bddetalleproductos`.`temperatura` AS `temperatura`,`bddetalleproductos`.`estado` AS `estado`,`bddetalleproductos`.`bodega` AS `bodega`,`bdproductos`.`Proveedor` AS `Proveedor` from (`bddetalleproductos` left join (`bdproductos` left join `bdgrupo` on((`bdgrupo`.`codigo` = `bdproductos`.`grupo`))) on((`bdproductos`.`idSistema` = `bddetalleproductos`.`codProducto`))) where ((`bddetalleproductos`.`estado` = \'DISPONIBLE\') or (`bddetalleproductos`.`estado` = \'PRESTADO\'))
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick`.`bdproductos`.`Codigo` AS `Codigo`,`bdclick`.`bdproductos`.`idSistema` AS `idSistema`,`bdclick`.`bdproductos`.`Descripcion` AS `Descripcion`,`bdclick`.`bddetalleproductos`.`cantidad` AS `cantidad`,`bdclick`.`bddetalleproductos`.`imei` AS `imei`,`bdclick`.`bddetalleproductos`.`color` AS `color`,`bdclick`.`bddetalleproductos`.`talla` AS `talla`,`bdclick`.`bddetalleproductos`.`lote` AS `lote`,`bdclick`.`bddetalleproductos`.`fechaVencimiento` AS `fechaVencimiento`,`bdclick`.`bddetalleproductos`.`temperatura` AS `temperatura`,`bdclick`.`bddetalleproductos`.`estado` AS `estado`,`bdclick`.`bddetalleproductos`.`bodega` AS `bodega`,`bdclick`.`bdproductos`.`Proveedor` AS `Proveedor` from (`bdclick`.`bddetalleproductos` left join (`bdclick`.`bdproductos` left join `bdclick`.`bdgrupo` on((`bdclick`.`bdgrupo`.`codigo` = `bdclick`.`bdproductos`.`grupo`))) on((`bdclick`.`bdproductos`.`idSistema` = `bdclick`.`bddetalleproductos`.`codProducto`))) where ((`bdclick`.`bddetalleproductos`.`estado` = \'DISPONIBLE\') or (`bdclick`.`bddetalleproductos`.`estado` = \'PRESTADO\'))
+mariadb-version=100135

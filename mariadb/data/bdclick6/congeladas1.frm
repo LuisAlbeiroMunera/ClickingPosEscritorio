@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick6`.`bdcongelada`.`idFactura` AS `idFactura`,`bdclick6`.`bdcongelada`.`conseMesa` AS `conseMesa`,`bdclick6`.`bdcongelada`.`totalGeneral` AS `totalGeneral` from `bdclick6`.`bdcongelada` group by `bdclick6`.`bdcongelada`.`idFactura`
+md5=f7e3da8faee47d34149f2e749e621a77
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:57:33
+create-version=2
+source=select `bdcongelada`.`idFactura` AS `idFactura`,`bdcongelada`.`conseMesa` AS `conseMesa`,`bdcongelada`.`totalGeneral` AS `totalGeneral` from `bdcongelada` group by `bdcongelada`.`idFactura`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick6`.`bdcongelada`.`idFactura` AS `idFactura`,`bdclick6`.`bdcongelada`.`conseMesa` AS `conseMesa`,`bdclick6`.`bdcongelada`.`totalGeneral` AS `totalGeneral` from `bdclick6`.`bdcongelada` group by `bdclick6`.`bdcongelada`.`idFactura`
+mariadb-version=100135

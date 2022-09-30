@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `bdclick1`.`bdfactura`.`red` AS `red`,count(`bdclick1`.`bdfactura`.`rtIva`) AS `CuentaDertIva`,sum(`bdclick1`.`bdfactura`.`rtIva`) AS `SumaDertIva` from `bdclick1`.`bdfactura` where (`bdclick1`.`bdfactura`.`rtIva` > 0) group by `bdclick1`.`bdfactura`.`red`)
+md5=acc237bdd74d618a6a4e29f5d7093146
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-13 21:34:38
+create-version=2
+source=(select `bdfactura`.`red` AS `red`,count(`bdfactura`.`rtIva`) AS `CuentaDertIva`,sum(`bdfactura`.`rtIva`) AS `SumaDertIva` from `bdfactura` where (`bdfactura`.`rtIva` > 0) group by `bdfactura`.`red`)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `bdclick1`.`bdfactura`.`red` AS `red`,count(`bdclick1`.`bdfactura`.`rtIva`) AS `CuentaDertIva`,sum(`bdclick1`.`bdfactura`.`rtIva`) AS `SumaDertIva` from `bdclick1`.`bdfactura` where (`bdclick1`.`bdfactura`.`rtIva` > 0) group by `bdclick1`.`bdfactura`.`red`)
+mariadb-version=100135

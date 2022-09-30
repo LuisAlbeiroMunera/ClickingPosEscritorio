@@ -1,0 +1,1 @@
+{"tipoIdentificacion":"NIT","identificacion":null,"estado":{"codigo":"ERROR","descripcion":"Error en las validaciones","errores":["El campo identificacion es obligatorio."]}}

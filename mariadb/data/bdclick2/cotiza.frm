@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `bdclick2`.`bdcotizacion`.`idFactura` AS `idFactura`,`bdclick2`.`bdcotizacion`.`producto` AS `producto`,`bdclick2`.`bdcotizacion`.`lista` AS `lista`,`bdclick2`.`bdcotizacion`.`cantidad` AS `cantidad`,`bdclick2`.`bdcotizacion`.`descuento` AS `descuento`,`bdclick2`.`bdcotizacion`.`total` AS `total`,`bdclick2`.`bdcotizacion`.`iva` AS `iva`,`bdclick2`.`bdcotizacion`.`subtotal` AS `subtotal`,`bdclick2`.`bdcotizacion`.`NC` AS `NC`,`bdclick2`.`bdcotizacion`.`utilidad` AS `utilidad`,`bdclick2`.`bdcotizacion`.`concepto` AS `concepto`,`bdclick2`.`bdcotizacion`.`porcDescuento` AS `porcDescuento`,`bdclick2`.`bdcotizacion`.`descripcion` AS `descripcion`,`bdclick2`.`bdcotizacion`.`plu` AS `plu`,`bdclick2`.`bdcotizacion`.`cant2` AS `cant2`,`bdclick2`.`bdcotizacion`.`estado` AS `estado`,`bdclick2`.`bdcotizacion`.`porcIva` AS `porcIva`,`bdclick2`.`bdcotizacion`.`tercero` AS `tercero`,`bdclick2`.`bdcotizacion`.`utilidad1` AS `utilidad1`,`bdclick2`.`bdcotizacion`.`preparacion` AS `preparacion` from `bdclick2`.`bdcotizacion`)
+md5=0b69877ce3b868eede3e6453ce04dae7
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-13 21:37:44
+create-version=2
+source=(select `bdcotizacion`.`idFactura` AS `idFactura`,`bdcotizacion`.`producto` AS `producto`,`bdcotizacion`.`lista` AS `lista`,`bdcotizacion`.`cantidad` AS `cantidad`,`bdcotizacion`.`descuento` AS `descuento`,`bdcotizacion`.`total` AS `total`,`bdcotizacion`.`iva` AS `iva`,`bdcotizacion`.`subtotal` AS `subtotal`,`bdcotizacion`.`NC` AS `NC`,`bdcotizacion`.`utilidad` AS `utilidad`,`bdcotizacion`.`concepto` AS `concepto`,`bdcotizacion`.`porcDescuento` AS `porcDescuento`,`bdcotizacion`.`descripcion` AS `descripcion`,`bdcotizacion`.`plu` AS `plu`,`bdcotizacion`.`cant2` AS `cant2`,`bdcotizacion`.`estado` AS `estado`,`bdcotizacion`.`porcIva` AS `porcIva`,`bdcotizacion`.`tercero` AS `tercero`,`bdcotizacion`.`utilidad1` AS `utilidad1`,`bdcotizacion`.`preparacion` AS `preparacion` from `bdcotizacion`)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `bdclick2`.`bdcotizacion`.`idFactura` AS `idFactura`,`bdclick2`.`bdcotizacion`.`producto` AS `producto`,`bdclick2`.`bdcotizacion`.`lista` AS `lista`,`bdclick2`.`bdcotizacion`.`cantidad` AS `cantidad`,`bdclick2`.`bdcotizacion`.`descuento` AS `descuento`,`bdclick2`.`bdcotizacion`.`total` AS `total`,`bdclick2`.`bdcotizacion`.`iva` AS `iva`,`bdclick2`.`bdcotizacion`.`subtotal` AS `subtotal`,`bdclick2`.`bdcotizacion`.`NC` AS `NC`,`bdclick2`.`bdcotizacion`.`utilidad` AS `utilidad`,`bdclick2`.`bdcotizacion`.`concepto` AS `concepto`,`bdclick2`.`bdcotizacion`.`porcDescuento` AS `porcDescuento`,`bdclick2`.`bdcotizacion`.`descripcion` AS `descripcion`,`bdclick2`.`bdcotizacion`.`plu` AS `plu`,`bdclick2`.`bdcotizacion`.`cant2` AS `cant2`,`bdclick2`.`bdcotizacion`.`estado` AS `estado`,`bdclick2`.`bdcotizacion`.`porcIva` AS `porcIva`,`bdclick2`.`bdcotizacion`.`tercero` AS `tercero`,`bdclick2`.`bdcotizacion`.`utilidad1` AS `utilidad1`,`bdclick2`.`bdcotizacion`.`preparacion` AS `preparacion` from `bdclick2`.`bdcotizacion`)
+mariadb-version=100135

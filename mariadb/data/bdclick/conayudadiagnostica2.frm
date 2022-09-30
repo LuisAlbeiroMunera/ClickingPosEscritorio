@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `bdclick`.`bdayudadiagnostica`.`Id` AS `Id`,`bdclick`.`bdayudadiagnostica`.`historia` AS `historia`,`bdclick`.`bdayudadiagnostica`.`fecha` AS `fecha`,`bdclick`.`bdayudadiagnostica`.`observaciones` AS `observaciones` from `bdclick`.`bdayudadiagnostica`)
+md5=80f624131cfa250a0467c3e0ae14fd19
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-09-20 15:58:22
+create-version=2
+source=(select `bdayudadiagnostica`.`Id` AS `Id`,`bdayudadiagnostica`.`historia` AS `historia`,`bdayudadiagnostica`.`fecha` AS `fecha`,`bdayudadiagnostica`.`observaciones` AS `observaciones` from `bdayudadiagnostica`)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `bdclick`.`bdayudadiagnostica`.`Id` AS `Id`,`bdclick`.`bdayudadiagnostica`.`historia` AS `historia`,`bdclick`.`bdayudadiagnostica`.`fecha` AS `fecha`,`bdclick`.`bdayudadiagnostica`.`observaciones` AS `observaciones` from `bdclick`.`bdayudadiagnostica`)
+mariadb-version=100135

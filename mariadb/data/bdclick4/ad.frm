@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick4`.`bdclickppal`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclick4`.`bdclickppal`.`codigoConcepto` AS `codigoConcepto`,`bdclick4`.`bdclickppal`.`cantidadRealizada` AS `cantidadRealizada`,`bdclick4`.`bdclickppal`.`valor` AS `valor`,(`bdclick4`.`bdclickppal`.`valor` * `bdclick4`.`bdclickppal`.`cantidadRealizada`) AS `valorTotal`,`bdclick4`.`bdclickppal`.`facturaNumero` AS `orden`,`bdclick4`.`bdclickppal`.`estado2` AS `estado2` from `bdclick4`.`bdclickppal`
+md5=5ad5190eecdd720eb97d53b8d7171bff
+updatable=1
+algorithm=0
+definer_user=click
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:32:24
+create-version=2
+source=select `bdclickppal`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclickppal`.`codigoConcepto` AS `codigoConcepto`,`bdclickppal`.`cantidadRealizada` AS `cantidadRealizada`,`bdclickppal`.`valor` AS `valor`,(`bdclickppal`.`valor` * `bdclickppal`.`cantidadRealizada`) AS `valorTotal`,`bdclickppal`.`facturaNumero` AS `orden`,`bdclickppal`.`estado2` AS `estado2` from `bdclickppal`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick4`.`bdclickppal`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclick4`.`bdclickppal`.`codigoConcepto` AS `codigoConcepto`,`bdclick4`.`bdclickppal`.`cantidadRealizada` AS `cantidadRealizada`,`bdclick4`.`bdclickppal`.`valor` AS `valor`,(`bdclick4`.`bdclickppal`.`valor` * `bdclick4`.`bdclickppal`.`cantidadRealizada`) AS `valorTotal`,`bdclick4`.`bdclickppal`.`facturaNumero` AS `orden`,`bdclick4`.`bdclickppal`.`estado2` AS `estado2` from `bdclick4`.`bdclickppal`
+mariadb-version=100135

@@ -1,0 +1,6 @@
+/build/
+/dist/
+/nbproject/private/
+/*.log
+/*.pdf
+actualizacion/04082022.sql

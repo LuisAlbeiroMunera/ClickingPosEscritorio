@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick`.`bdclickppal`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclick`.`bdclickppal`.`tipoIdentidad` AS `tipoIdentidad`,`bdclick`.`bdclickppal`.`Id` AS `Id`,`bdclick`.`bdclickppal`.`fecha` AS `fecha`,`bdclick`.`bdclickppal`.`autorizacion` AS `autorizacion`,`bdclick`.`bdclickppal`.`codigoTarifa` AS `codigoTarifa`,`bdclick`.`bdclickppal`.`ambitoProcedimiento` AS `ambitoProcedimiento`,`bdclick`.`bdclickppal`.`finalidadd` AS `finalidadd`,`bdclick`.`bdclickppal`.`personalAtiende` AS `personalAtiende`,`bdclick`.`bdclickppal`.`tipoDiagnosticoPrincipal` AS `tipoDiagnosticoPrincipal`,`bdclick`.`bdclickppal`.`DiagnosticoRelacionado` AS `DiagnosticoRelacionado`,`bdclick`.`bdclickppal`.`complicaciones` AS `complicaciones`,`bdclick`.`bdclickppal`.`actoQuirurgico` AS `actoQuirurgico`,(`bdclick`.`bdclickppal`.`valor` * `bdclick`.`bdclickppal`.`cantidadRealizada`) AS `valor2`,`bdclick`.`bdclickppal`.`facturaNumero` AS `orden`,`bdclick`.`bdclickppal`.`estado2` AS `estado2` from `bdclick`.`bdclickppal` where (`bdclick`.`bdclickppal`.`tipoOrden` = \'procedimiento\')
+md5=54652bc0b43e6ef62cc42f82bac75c6e
+updatable=1
+algorithm=0
+definer_user=click
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-09-20 15:58:21
+create-version=2
+source=select `bdclickppal`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclickppal`.`tipoIdentidad` AS `tipoIdentidad`,`bdclickppal`.`Id` AS `Id`,`bdclickppal`.`fecha` AS `fecha`,`bdclickppal`.`autorizacion` AS `autorizacion`,`bdclickppal`.`codigoTarifa` AS `codigoTarifa`,`bdclickppal`.`ambitoProcedimiento` AS `ambitoProcedimiento`,`bdclickppal`.`finalidadd` AS `finalidadd`,`bdclickppal`.`personalAtiende` AS `personalAtiende`,`bdclickppal`.`tipoDiagnosticoPrincipal` AS `tipoDiagnosticoPrincipal`,`bdclickppal`.`DiagnosticoRelacionado` AS `DiagnosticoRelacionado`,`bdclickppal`.`complicaciones` AS `complicaciones`,`bdclickppal`.`actoQuirurgico` AS `actoQuirurgico`,(`bdclickppal`.`valor` * `bdclickppal`.`cantidadRealizada`) AS `valor2`,`bdclickppal`.`facturaNumero` AS `orden`,`bdclickppal`.`estado2` AS `estado2` from `bdclickppal` where (`bdclickppal`.`tipoOrden` = \'procedimiento\')
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick`.`bdclickppal`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclick`.`bdclickppal`.`tipoIdentidad` AS `tipoIdentidad`,`bdclick`.`bdclickppal`.`Id` AS `Id`,`bdclick`.`bdclickppal`.`fecha` AS `fecha`,`bdclick`.`bdclickppal`.`autorizacion` AS `autorizacion`,`bdclick`.`bdclickppal`.`codigoTarifa` AS `codigoTarifa`,`bdclick`.`bdclickppal`.`ambitoProcedimiento` AS `ambitoProcedimiento`,`bdclick`.`bdclickppal`.`finalidadd` AS `finalidadd`,`bdclick`.`bdclickppal`.`personalAtiende` AS `personalAtiende`,`bdclick`.`bdclickppal`.`tipoDiagnosticoPrincipal` AS `tipoDiagnosticoPrincipal`,`bdclick`.`bdclickppal`.`DiagnosticoRelacionado` AS `DiagnosticoRelacionado`,`bdclick`.`bdclickppal`.`complicaciones` AS `complicaciones`,`bdclick`.`bdclickppal`.`actoQuirurgico` AS `actoQuirurgico`,(`bdclick`.`bdclickppal`.`valor` * `bdclick`.`bdclickppal`.`cantidadRealizada`) AS `valor2`,`bdclick`.`bdclickppal`.`facturaNumero` AS `orden`,`bdclick`.`bdclickppal`.`estado2` AS `estado2` from `bdclick`.`bdclickppal` where (`bdclick`.`bdclickppal`.`tipoOrden` = \'procedimiento\')
+mariadb-version=100135

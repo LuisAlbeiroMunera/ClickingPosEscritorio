@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select cast(substr(`bdclick`.`bdnc`.`Id`,4,100) as signed) AS `ordenId`,`bdclick`.`bdnc`.`Id` AS `id`,`bdclick`.`bdnc`.`cuadre` AS `cuadre`,cast(substr(`bdclick`.`bdnc`.`cuadre`,8,100) as signed) AS `ordenIdCuadre` from `bdclick`.`bdnc` where ((`bdclick`.`bdnc`.`cuadre` <> \'\') or (`bdclick`.`bdnc`.`cuadre` is not null)) order by cast(substr(`bdclick`.`bdnc`.`Id`,4,100) as signed))
+md5=e0f0801e12fa6ad1b4bdb77135cb88f3
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-09-20 15:58:21
+create-version=2
+source=(select cast(substr(`bdnc`.`Id`,4,100) as signed) AS `ordenId`,`bdnc`.`Id` AS `id`,`bdnc`.`cuadre` AS `cuadre`,cast(substr(`bdnc`.`cuadre`,8,100) as signed) AS `ordenIdCuadre` from `bdnc` where ((`bdnc`.`cuadre` <> \'\') or (`bdnc`.`cuadre` is not null)) order by cast(substr(`bdnc`.`Id`,4,100) as signed))
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select cast(substr(`bdclick`.`bdnc`.`Id`,4,100) as signed) AS `ordenId`,`bdclick`.`bdnc`.`Id` AS `id`,`bdclick`.`bdnc`.`cuadre` AS `cuadre`,cast(substr(`bdclick`.`bdnc`.`cuadre`,8,100) as signed) AS `ordenIdCuadre` from `bdclick`.`bdnc` where ((`bdclick`.`bdnc`.`cuadre` <> \'\') or (`bdclick`.`bdnc`.`cuadre` is not null)) order by cast(substr(`bdclick`.`bdnc`.`Id`,4,100) as signed))
+mariadb-version=100135

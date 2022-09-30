@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `bdclick`.`bdcompra`.`ingreso` AS `ingreso`,sum(`bdclick`.`bdcompra`.`total`) AS `total` from `bdclick`.`bdcompra` group by `bdclick`.`bdcompra`.`ingreso`)
+md5=b212f08b2cc82817f6145c6812c60972
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-09-20 15:58:27
+create-version=2
+source=(select `bdcompra`.`ingreso` AS `ingreso`,sum(`bdcompra`.`total`) AS `total` from `bdcompra` group by `bdcompra`.`ingreso`)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `bdclick`.`bdcompra`.`ingreso` AS `ingreso`,sum(`bdclick`.`bdcompra`.`total`) AS `total` from `bdclick`.`bdcompra` group by `bdclick`.`bdcompra`.`ingreso`)
+mariadb-version=100135

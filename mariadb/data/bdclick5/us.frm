@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclickppal`.`tipoIdentidad` AS `tipoIdentidad`,`bdclickppal`.`Id` AS `Id`,`bdclickppal`.`codigoEntidadAdministradora` AS `codigoEntidadAdministradora`,`bdclickppal`.`TipoUsuario` AS `TipoUsuario`,`bdclickppal`.`pApellido` AS `pApellido`,`bdclickppal`.`sApellido` AS `sApellido`,`bdclickppal`.`pNombre` AS `pNombre`,`bdclickppal`.`sNombre` AS `sNombre`,`bdclickppal`.`Edad` AS `Edad`,`bdclickppal`.`unidadMedidaEdad` AS `unidadMedidaEdad`,`bdclickppal`.`sexo` AS `sexo`,`bdclickppal`.`codigoDepartamento` AS `codigoDepartamento`,`bdclickppal`.`codigoMunicipio` AS `codigoMunicipio`,`bdclickppal`.`zona` AS `zona`,`bdclickppal`.`facturaNumero` AS `orden`,`bdclickppal`.`estado2` AS `estado2` from `bdclick5`.`bdclickppal`
+md5=68a2cda3c096ef84052e3999bc04b4ff
+updatable=0
+algorithm=0
+definer_user=click
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:46:53
+create-version=2
+source=select `bdclickppal`.`tipoIdentidad` AS `tipoIdentidad`,`bdclickppal`.`Id` AS `Id`,`bdclickppal`.`codigoEntidadAdministradora` AS `codigoEntidadAdministradora`,`bdclickppal`.`TipoUsuario` AS `TipoUsuario`,`bdclickppal`.`pApellido` AS `pApellido`,`bdclickppal`.`sApellido` AS `sApellido`,`bdclickppal`.`pNombre` AS `pNombre`,`bdclickppal`.`sNombre` AS `sNombre`,`bdclickppal`.`Edad` AS `Edad`,`bdclickppal`.`unidadMedidaEdad` AS `unidadMedidaEdad`,`bdclickppal`.`sexo` AS `sexo`,`bdclickppal`.`codigoDepartamento` AS `codigoDepartamento`,`bdclickppal`.`codigoMunicipio` AS `codigoMunicipio`,`bdclickppal`.`zona` AS `zona`,`bdclickppal`.`facturaNumero` AS `orden`,`bdclickppal`.`estado2` AS `estado2` from `bdclickppal`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclickppal`.`tipoIdentidad` AS `tipoIdentidad`,`bdclickppal`.`Id` AS `Id`,`bdclickppal`.`codigoEntidadAdministradora` AS `codigoEntidadAdministradora`,`bdclickppal`.`TipoUsuario` AS `TipoUsuario`,`bdclickppal`.`pApellido` AS `pApellido`,`bdclickppal`.`sApellido` AS `sApellido`,`bdclickppal`.`pNombre` AS `pNombre`,`bdclickppal`.`sNombre` AS `sNombre`,`bdclickppal`.`Edad` AS `Edad`,`bdclickppal`.`unidadMedidaEdad` AS `unidadMedidaEdad`,`bdclickppal`.`sexo` AS `sexo`,`bdclickppal`.`codigoDepartamento` AS `codigoDepartamento`,`bdclickppal`.`codigoMunicipio` AS `codigoMunicipio`,`bdclickppal`.`zona` AS `zona`,`bdclickppal`.`facturaNumero` AS `orden`,`bdclickppal`.`estado2` AS `estado2` from `bdclick5`.`bdclickppal`
+mariadb-version=100135

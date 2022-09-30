@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick5`.`bdproductos`.`idSistema` AS `codigo`,sum(if(isnull(`bdclick5`.`trasladobod`.`cantidad`),\'0\',`bdclick5`.`trasladobod`.`cantidad`)) AS `Expr1` from (`bdclick5`.`bdproductos` left join `bdclick5`.`trasladobod` on((`bdclick5`.`bdproductos`.`idSistema` = `bdclick5`.`trasladobod`.`producto`))) group by `bdclick5`.`bdproductos`.`idSistema`
+md5=880c8cec0e7bdaaa779d4337052b3138
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:46:53
+create-version=2
+source=select `bdproductos`.`idSistema` AS `codigo`,sum(if(isnull(`trasladobod`.`cantidad`),\'0\',`trasladobod`.`cantidad`)) AS `Expr1` from (`bdproductos` left join `trasladobod` on((`bdproductos`.`idSistema` = `trasladobod`.`producto`))) group by `bdproductos`.`idSistema`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick5`.`bdproductos`.`idSistema` AS `codigo`,sum(if(isnull(`bdclick5`.`trasladobod`.`cantidad`),\'0\',`bdclick5`.`trasladobod`.`cantidad`)) AS `Expr1` from (`bdclick5`.`bdproductos` left join `bdclick5`.`trasladobod` on((`bdclick5`.`bdproductos`.`idSistema` = `bdclick5`.`trasladobod`.`producto`))) group by `bdclick5`.`bdproductos`.`idSistema`
+mariadb-version=100135

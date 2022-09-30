@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `bdclick4`.`bdfactura`.`red` AS `red`,sum(`bdclick4`.`bdfactura`.`iva`) AS `SumaDeiva`,sum(`bdclick4`.`bdfactura`.`subtotal`) AS `SumaDesubtotal` from `bdclick4`.`bdfactura` group by `bdclick4`.`bdfactura`.`red`)
+md5=79d9d4447985548ba982a5dcc01dff8c
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:32:31
+create-version=2
+source=(select `bdfactura`.`red` AS `red`,sum(`bdfactura`.`iva`) AS `SumaDeiva`,sum(`bdfactura`.`subtotal`) AS `SumaDesubtotal` from `bdfactura` group by `bdfactura`.`red`)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `bdclick4`.`bdfactura`.`red` AS `red`,sum(`bdclick4`.`bdfactura`.`iva`) AS `SumaDeiva`,sum(`bdclick4`.`bdfactura`.`subtotal`) AS `SumaDesubtotal` from `bdclick4`.`bdfactura` group by `bdclick4`.`bdfactura`.`red`)
+mariadb-version=100135

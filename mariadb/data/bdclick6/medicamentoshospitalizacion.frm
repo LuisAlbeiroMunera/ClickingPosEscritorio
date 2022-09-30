@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick6`.`bdmedicamentosprocesosalertas`.`codigo` AS `codigo`,`bdclick6`.`bdmedicamentosprocesosalertas`.`medicamentos` AS `medicamentos`,`bdclick6`.`bdmedicamentosprocesosalertas`.`posologia` AS `posologia`,`bdclick6`.`bdmedicamentosprocesosalertas`.`idHospitalizacion` AS `idHospitalizacion` from `bdclick6`.`bdmedicamentosprocesosalertas` group by `bdclick6`.`bdmedicamentosprocesosalertas`.`codigo`,`bdclick6`.`bdmedicamentosprocesosalertas`.`medicamentos`,`bdclick6`.`bdmedicamentosprocesosalertas`.`posologia`,`bdclick6`.`bdmedicamentosprocesosalertas`.`idHospitalizacion`
+md5=a73eec77ed2d898fb6eb8fc9f95e76a2
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:57:36
+create-version=2
+source=select `bdmedicamentosprocesosalertas`.`codigo` AS `codigo`,`bdmedicamentosprocesosalertas`.`medicamentos` AS `medicamentos`,`bdmedicamentosprocesosalertas`.`posologia` AS `posologia`,`bdmedicamentosprocesosalertas`.`idHospitalizacion` AS `idHospitalizacion` from `bdmedicamentosprocesosalertas` group by `bdmedicamentosprocesosalertas`.`codigo`,`bdmedicamentosprocesosalertas`.`medicamentos`,`bdmedicamentosprocesosalertas`.`posologia`,`bdmedicamentosprocesosalertas`.`idHospitalizacion`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick6`.`bdmedicamentosprocesosalertas`.`codigo` AS `codigo`,`bdclick6`.`bdmedicamentosprocesosalertas`.`medicamentos` AS `medicamentos`,`bdclick6`.`bdmedicamentosprocesosalertas`.`posologia` AS `posologia`,`bdclick6`.`bdmedicamentosprocesosalertas`.`idHospitalizacion` AS `idHospitalizacion` from `bdclick6`.`bdmedicamentosprocesosalertas` group by `bdclick6`.`bdmedicamentosprocesosalertas`.`codigo`,`bdclick6`.`bdmedicamentosprocesosalertas`.`medicamentos`,`bdclick6`.`bdmedicamentosprocesosalertas`.`posologia`,`bdclick6`.`bdmedicamentosprocesosalertas`.`idHospitalizacion`
+mariadb-version=100135

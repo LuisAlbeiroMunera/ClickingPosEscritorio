@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick3`.`incapacidad`.`consulta` AS `consulta`,count(`bdclick3`.`incapacidad`.`Id`) AS `cantidadIncapacidad` from `bdclick3`.`incapacidad` group by `bdclick3`.`incapacidad`.`consulta`
+md5=05a792ed0b31c9a9ec0215d663dae10f
+updatable=0
+algorithm=0
+definer_user=click
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-13 21:39:48
+create-version=2
+source=select `incapacidad`.`consulta` AS `consulta`,count(`incapacidad`.`Id`) AS `cantidadIncapacidad` from `incapacidad` group by `incapacidad`.`consulta`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick3`.`incapacidad`.`consulta` AS `consulta`,count(`bdclick3`.`incapacidad`.`Id`) AS `cantidadIncapacidad` from `bdclick3`.`incapacidad` group by `bdclick3`.`incapacidad`.`consulta`
+mariadb-version=100135

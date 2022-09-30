@@ -1,0 +1,1 @@
+ALTER TABLE cliente ADD responsableIva BOOLEAN NOT NULL DEFAULT 0;

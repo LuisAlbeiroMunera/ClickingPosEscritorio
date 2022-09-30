@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick1`.`conconveniopendiente2`.`Id` AS `Id`,`bdclick1`.`conconveniopendiente2`.`nit` AS `nit`,`bdclick1`.`conconveniopendiente2`.`montoTotal` AS `montoTotal`,`bdclick1`.`conconveniopendiente2`.`total2` AS `total`,`bdclick1`.`conconveniopendiente2`.`convenio` AS `convenio`,`bdclick1`.`conconveniopendiente2`.`fechaFinalizacion` AS `fechaFinalizacion`,if((`bdclick1`.`conconveniopendiente2`.`fechaFinalizacion` < cast(now() as date)),if((`bdclick1`.`conconveniopendiente2`.`montoTotal` < `bdclick1`.`conconveniopendiente2`.`total2`),\'FINALIZADO3\',\'FINALIZADO1\'),if((`bdclick1`.`conconveniopendiente2`.`montoTotal` < `bdclick1`.`conconveniopendiente2`.`total2`),\'FINALIZADO2\',\'PENDIENTE\')) AS `estado` from `bdclick1`.`conconveniopendiente2`
+md5=50ca83a9b58ce5c89f35f73619f83617
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-13 21:34:32
+create-version=2
+source=select `conconveniopendiente2`.`Id` AS `Id`,`conconveniopendiente2`.`nit` AS `nit`,`conconveniopendiente2`.`montoTotal` AS `montoTotal`,`conconveniopendiente2`.`total2` AS `total`,`conconveniopendiente2`.`convenio` AS `convenio`,`conconveniopendiente2`.`fechaFinalizacion` AS `fechaFinalizacion`,if((`conconveniopendiente2`.`fechaFinalizacion` < cast(now() as date)),if((`conconveniopendiente2`.`montoTotal` < `conconveniopendiente2`.`total2`),\'FINALIZADO3\',\'FINALIZADO1\'),if((`conconveniopendiente2`.`montoTotal` < `conconveniopendiente2`.`total2`),\'FINALIZADO2\',\'PENDIENTE\')) AS `estado` from `conconveniopendiente2`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick1`.`conconveniopendiente2`.`Id` AS `Id`,`bdclick1`.`conconveniopendiente2`.`nit` AS `nit`,`bdclick1`.`conconveniopendiente2`.`montoTotal` AS `montoTotal`,`bdclick1`.`conconveniopendiente2`.`total2` AS `total`,`bdclick1`.`conconveniopendiente2`.`convenio` AS `convenio`,`bdclick1`.`conconveniopendiente2`.`fechaFinalizacion` AS `fechaFinalizacion`,if((`bdclick1`.`conconveniopendiente2`.`fechaFinalizacion` < cast(now() as date)),if((`bdclick1`.`conconveniopendiente2`.`montoTotal` < `bdclick1`.`conconveniopendiente2`.`total2`),\'FINALIZADO3\',\'FINALIZADO1\'),if((`bdclick1`.`conconveniopendiente2`.`montoTotal` < `bdclick1`.`conconveniopendiente2`.`total2`),\'FINALIZADO2\',\'PENDIENTE\')) AS `estado` from `bdclick1`.`conconveniopendiente2`
+mariadb-version=100135

@@ -1,0 +1,2 @@
+ALTER TABLE bdmaestra MODIFY pie VARCHAR(750);
+ALTER TABLE bdmaestra MODIFY legal VARCHAR(750);

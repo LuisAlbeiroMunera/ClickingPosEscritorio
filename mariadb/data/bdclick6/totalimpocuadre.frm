@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick6`.`bdfactura`.`red` AS `red`,sum(`bdclick6`.`bdfactura`.`impoconsumo`) AS `SumaDeimpoconsumo`,sum(`bdclick6`.`bdfactura`.`subtotal`) AS `SumaDesubtotal` from `bdclick6`.`bdfactura` group by `bdclick6`.`bdfactura`.`red`
+md5=19985cd1ea23d8c2b19f6e67597052b8
+updatable=0
+algorithm=0
+definer_user=click
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:57:40
+create-version=2
+source=select `bdfactura`.`red` AS `red`,sum(`bdfactura`.`impoconsumo`) AS `SumaDeimpoconsumo`,sum(`bdfactura`.`subtotal`) AS `SumaDesubtotal` from `bdfactura` group by `bdfactura`.`red`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick6`.`bdfactura`.`red` AS `red`,sum(`bdclick6`.`bdfactura`.`impoconsumo`) AS `SumaDeimpoconsumo`,sum(`bdclick6`.`bdfactura`.`subtotal`) AS `SumaDesubtotal` from `bdclick6`.`bdfactura` group by `bdclick6`.`bdfactura`.`red`
+mariadb-version=100135

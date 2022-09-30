@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick2`.`bdingreso`.`id` AS `id`,`bdclick2`.`bdingreso`.`proveedor` AS `proveedor`,`bdclick2`.`bdterceros`.`nombre` AS `nombre`,`bdclick2`.`bdingreso`.`fechaFactura` AS `fechaFactura`,`bdclick2`.`bdingreso`.`fechaVencimiento` AS `fechaVencimiento`,`bdclick2`.`bdingreso`.`total` AS `total`,`bdclick2`.`bdingreso`.`descuentos` AS `descuentos`,`bdclick2`.`bdingreso`.`iva` AS `iva`,`bdclick2`.`bdingreso`.`impoconsumo` AS `impoconsumo`,`bdclick2`.`bdingreso`.`subtotal` AS `subtotal`,`bdclick2`.`bdingreso`.`tipo` AS `tipo`,`bdclick2`.`bdingreso`.`concepto` AS `concepto`,`bdclick2`.`bdingreso`.`rtIva` AS `rtIva`,`bdclick2`.`bdingreso`.`rtFuente` AS `rtFuente`,`bdclick2`.`bdingreso`.`porRtFuente` AS `porRtFuente`,`bdclick2`.`bdingreso`.`anulada` AS `anulada`,`bdclick2`.`bdingreso`.`hora` AS `hora`,`bdclick2`.`bdingreso`.`bodega` AS `bodega`,`bdclick2`.`bdterceros`.`id` AS `idProveedor` from (`bdclick2`.`bdingreso` left join `bdclick2`.`bdterceros` on((`bdclick2`.`bdingreso`.`proveedor` = `bdclick2`.`bdterceros`.`idSistema`))) where (`bdclick2`.`bdingreso`.`id` like \'ING-%\')
+md5=6b5a1b0ec51b390c27aa053e41d75a5f
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-13 21:37:47
+create-version=2
+source=select `bdingreso`.`id` AS `id`,`bdingreso`.`proveedor` AS `proveedor`,`bdterceros`.`nombre` AS `nombre`,`bdingreso`.`fechaFactura` AS `fechaFactura`,`bdingreso`.`fechaVencimiento` AS `fechaVencimiento`,`bdingreso`.`total` AS `total`,`bdingreso`.`descuentos` AS `descuentos`,`bdingreso`.`iva` AS `iva`,`bdingreso`.`impoconsumo` AS `impoconsumo`,`bdingreso`.`subtotal` AS `subtotal`,`bdingreso`.`tipo` AS `tipo`,`bdingreso`.`concepto` AS `concepto`,`bdingreso`.`rtIva` AS `rtIva`,`bdingreso`.`rtFuente` AS `rtFuente`,`bdingreso`.`porRtFuente` AS `porRtFuente`,`bdingreso`.`anulada` AS `anulada`,`bdingreso`.`hora` AS `hora`,`bdingreso`.`bodega` AS `bodega`,`bdterceros`.`id` AS `idProveedor` from (`bdingreso` left join `bdterceros` on((`bdingreso`.`proveedor` = `bdterceros`.`idSistema`))) where (`bdingreso`.`id` like \'ING-%\')
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick2`.`bdingreso`.`id` AS `id`,`bdclick2`.`bdingreso`.`proveedor` AS `proveedor`,`bdclick2`.`bdterceros`.`nombre` AS `nombre`,`bdclick2`.`bdingreso`.`fechaFactura` AS `fechaFactura`,`bdclick2`.`bdingreso`.`fechaVencimiento` AS `fechaVencimiento`,`bdclick2`.`bdingreso`.`total` AS `total`,`bdclick2`.`bdingreso`.`descuentos` AS `descuentos`,`bdclick2`.`bdingreso`.`iva` AS `iva`,`bdclick2`.`bdingreso`.`impoconsumo` AS `impoconsumo`,`bdclick2`.`bdingreso`.`subtotal` AS `subtotal`,`bdclick2`.`bdingreso`.`tipo` AS `tipo`,`bdclick2`.`bdingreso`.`concepto` AS `concepto`,`bdclick2`.`bdingreso`.`rtIva` AS `rtIva`,`bdclick2`.`bdingreso`.`rtFuente` AS `rtFuente`,`bdclick2`.`bdingreso`.`porRtFuente` AS `porRtFuente`,`bdclick2`.`bdingreso`.`anulada` AS `anulada`,`bdclick2`.`bdingreso`.`hora` AS `hora`,`bdclick2`.`bdingreso`.`bodega` AS `bodega`,`bdclick2`.`bdterceros`.`id` AS `idProveedor` from (`bdclick2`.`bdingreso` left join `bdclick2`.`bdterceros` on((`bdclick2`.`bdingreso`.`proveedor` = `bdclick2`.`bdterceros`.`idSistema`))) where (`bdclick2`.`bdingreso`.`id` like \'ING-%\')
+mariadb-version=100135

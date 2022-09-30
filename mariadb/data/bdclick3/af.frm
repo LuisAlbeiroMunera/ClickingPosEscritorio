@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select `bdclick3`.`bdclickppal`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclick3`.`bdclickppal`.`razonSocial` AS `razonSocial`,`bdclick3`.`bdclickppal`.`tipoPrestadorServicio` AS `tipoPrestadorServicio`,`bdclick3`.`bdclickppal`.`IdPrestadorServicio` AS `IdPrestadorServicio`,`bdclick3`.`bdclickppal`.`codigoEntidadAdministradora` AS `codigoEntidadAdministradora`,`bdclick3`.`bdclickppal`.`nombreEntidadAdministradora` AS `nombreEntidadAdministradora`,`bdclick3`.`bdclickppal`.`numeroContrato` AS `numeroContrato`,`bdclick3`.`bdclickppal`.`nroPoliza` AS `nroPoliza`,`bdclick3`.`bdclickppal`.`copago` AS `copago`,`bdclick3`.`bdclickppal`.`valorComision` AS `valorComision`,`bdclick3`.`bdclickppal`.`valorDescuento` AS `valorDescuento`,((`bdclick3`.`bdclickppal`.`valor` * `bdclick3`.`bdclickppal`.`cantidadRealizada`) - `bdclick3`.`bdclickppal`.`copago`) AS `valor2`,`bdclick3`.`bdclickppal`.`facturaNumero` AS `orden`,`bdclick3`.`bdclickppal`.`estado2` AS `estado2`,`bdclick3`.`bdclickppal`.`fecha` AS `fecha` from `bdclick3`.`bdclickppal`
+md5=8382c458a1f597726a4125743a199966
+updatable=1
+algorithm=0
+definer_user=click
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-13 21:39:47
+create-version=2
+source=select `bdclickppal`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclickppal`.`razonSocial` AS `razonSocial`,`bdclickppal`.`tipoPrestadorServicio` AS `tipoPrestadorServicio`,`bdclickppal`.`IdPrestadorServicio` AS `IdPrestadorServicio`,`bdclickppal`.`codigoEntidadAdministradora` AS `codigoEntidadAdministradora`,`bdclickppal`.`nombreEntidadAdministradora` AS `nombreEntidadAdministradora`,`bdclickppal`.`numeroContrato` AS `numeroContrato`,`bdclickppal`.`nroPoliza` AS `nroPoliza`,`bdclickppal`.`copago` AS `copago`,`bdclickppal`.`valorComision` AS `valorComision`,`bdclickppal`.`valorDescuento` AS `valorDescuento`,((`bdclickppal`.`valor` * `bdclickppal`.`cantidadRealizada`) - `bdclickppal`.`copago`) AS `valor2`,`bdclickppal`.`facturaNumero` AS `orden`,`bdclickppal`.`estado2` AS `estado2`,`bdclickppal`.`fecha` AS `fecha` from `bdclickppal`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `bdclick3`.`bdclickppal`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclick3`.`bdclickppal`.`razonSocial` AS `razonSocial`,`bdclick3`.`bdclickppal`.`tipoPrestadorServicio` AS `tipoPrestadorServicio`,`bdclick3`.`bdclickppal`.`IdPrestadorServicio` AS `IdPrestadorServicio`,`bdclick3`.`bdclickppal`.`codigoEntidadAdministradora` AS `codigoEntidadAdministradora`,`bdclick3`.`bdclickppal`.`nombreEntidadAdministradora` AS `nombreEntidadAdministradora`,`bdclick3`.`bdclickppal`.`numeroContrato` AS `numeroContrato`,`bdclick3`.`bdclickppal`.`nroPoliza` AS `nroPoliza`,`bdclick3`.`bdclickppal`.`copago` AS `copago`,`bdclick3`.`bdclickppal`.`valorComision` AS `valorComision`,`bdclick3`.`bdclickppal`.`valorDescuento` AS `valorDescuento`,((`bdclick3`.`bdclickppal`.`valor` * `bdclick3`.`bdclickppal`.`cantidadRealizada`) - `bdclick3`.`bdclickppal`.`copago`) AS `valor2`,`bdclick3`.`bdclickppal`.`facturaNumero` AS `orden`,`bdclick3`.`bdclickppal`.`estado2` AS `estado2`,`bdclick3`.`bdclickppal`.`fecha` AS `fecha` from `bdclick3`.`bdclickppal`
+mariadb-version=100135

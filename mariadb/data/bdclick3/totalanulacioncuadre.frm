@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select sum(`bdclick3`.`bdfactura`.`subtotalGeneral`) AS `SumaDesubtotal`,sum(`bdclick3`.`bdfactura`.`totalGeneral`) AS `totalAnulacionCuadre`,`bdclick3`.`bdfactura`.`cuadreAnulacion` AS `cuadreAnulacion`,count(`bdclick3`.`bdfactura`.`cuadreAnulacion`) AS `contAnuladas` from `bdclick3`.`bdfactura` group by `bdclick3`.`bdfactura`.`cuadreAnulacion`)
+md5=30c0ba07dc47be7097538a6d43b462d7
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-13 21:39:54
+create-version=2
+source=(select sum(`bdfactura`.`subtotalGeneral`) AS `SumaDesubtotal`,sum(`bdfactura`.`totalGeneral`) AS `totalAnulacionCuadre`,`bdfactura`.`cuadreAnulacion` AS `cuadreAnulacion`,count(`bdfactura`.`cuadreAnulacion`) AS `contAnuladas` from `bdfactura` group by `bdfactura`.`cuadreAnulacion`)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select sum(`bdclick3`.`bdfactura`.`subtotalGeneral`) AS `SumaDesubtotal`,sum(`bdclick3`.`bdfactura`.`totalGeneral`) AS `totalAnulacionCuadre`,`bdclick3`.`bdfactura`.`cuadreAnulacion` AS `cuadreAnulacion`,count(`bdclick3`.`bdfactura`.`cuadreAnulacion`) AS `contAnuladas` from `bdclick3`.`bdfactura` group by `bdclick3`.`bdfactura`.`cuadreAnulacion`)
+mariadb-version=100135

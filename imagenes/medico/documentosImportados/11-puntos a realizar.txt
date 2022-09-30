@@ -1,0 +1,21 @@
+1. Facturar desde cualquier bodega.
+2. Iniciar con el productos por serial
+3. Parqueaderos
+4. Mensaje para generar copia de seguridad
+
+
+rips:
+no generan se quedan cargando
+
+1. Registrar el sistema cuando no tengan internet.
+2. Filtro de estado en clicking pagos
+3. Recuperacion de contraseña automatica.
+
+
+
+4. Codigo mas corto
+5. Validar codigo maximo 1 dia
+
+
+* Terminar impresión pos de ptm
+

@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `bdclick5`.`bdcxc`.`factura` AS `factura`,`bdclick5`.`bdcxc`.`tipo` AS `tipo`,sum(`bdclick5`.`bdcxc`.`valor`) AS `SumaDevalor`,`bdclick5`.`bdverificadorfacturas`.`cliente` AS `cliente`,if((`bdclick5`.`bdcxc`.`factura` like \'SEPARE-%\'),`bdclick5`.`bdcxc`.`factura`,`bdclick5`.`bdverificadorfacturas`.`factura`) AS `facturaTerm`,`bdclick5`.`bdverificadorfacturas`.`terminal` AS `terminal`,`bdclick5`.`bdcxc`.`estado` AS `estado`,\'0\' AS `cuotaInicial2` from (`bdclick5`.`bdcxc` left join `bdclick5`.`bdverificadorfacturas` on((`bdclick5`.`bdcxc`.`factura2` = `bdclick5`.`bdverificadorfacturas`.`factura`))) group by `bdclick5`.`bdcxc`.`factura`,`bdclick5`.`bdcxc`.`tipo`,`bdclick5`.`bdverificadorfacturas`.`cliente`,`bdclick5`.`bdverificadorfacturas`.`factura`,`bdclick5`.`bdverificadorfacturas`.`terminal`,`bdclick5`.`bdcxc`.`estado`,\'0\' having ((`bdclick5`.`bdcxc`.`tipo` = \'ABONO\') and ((`bdclick5`.`bdcxc`.`estado` = \'pend\') or (`bdclick5`.`bdcxc`.`estado` = \'cancelada\') or (`bdclick5`.`bdcxc`.`estado` = \'\') or (`bdclick5`.`bdcxc`.`estado` = \'ABONO-REALIZADO\'))))
+md5=a42be267d6f2d0020b6f328995e25275
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:46:43
+create-version=2
+source=(select `bdcxc`.`factura` AS `factura`,`bdcxc`.`tipo` AS `tipo`,sum(`bdcxc`.`valor`) AS `SumaDevalor`,`bdverificadorfacturas`.`cliente` AS `cliente`,if((`bdcxc`.`factura` like \'SEPARE-%\'),`bdcxc`.`factura`,`bdverificadorfacturas`.`factura`) AS `facturaTerm`,`bdverificadorfacturas`.`terminal` AS `terminal`,`bdcxc`.`estado` AS `estado`,\'0\' AS `cuotaInicial2` from (`bdcxc` left join `bdverificadorfacturas` on((`bdcxc`.`factura2` = `bdverificadorfacturas`.`factura`))) group by `bdcxc`.`factura`,`bdcxc`.`tipo`,`bdverificadorfacturas`.`cliente`,`bdverificadorfacturas`.`factura`,`bdverificadorfacturas`.`terminal`,`bdcxc`.`estado`,\'0\' having ((`bdcxc`.`tipo` = \'ABONO\') and ((`bdcxc`.`estado` = \'pend\') or (`bdcxc`.`estado` = \'cancelada\') or (`bdcxc`.`estado` = \'\') or (`bdcxc`.`estado` = \'ABONO-REALIZADO\'))))
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `bdclick5`.`bdcxc`.`factura` AS `factura`,`bdclick5`.`bdcxc`.`tipo` AS `tipo`,sum(`bdclick5`.`bdcxc`.`valor`) AS `SumaDevalor`,`bdclick5`.`bdverificadorfacturas`.`cliente` AS `cliente`,if((`bdclick5`.`bdcxc`.`factura` like \'SEPARE-%\'),`bdclick5`.`bdcxc`.`factura`,`bdclick5`.`bdverificadorfacturas`.`factura`) AS `facturaTerm`,`bdclick5`.`bdverificadorfacturas`.`terminal` AS `terminal`,`bdclick5`.`bdcxc`.`estado` AS `estado`,\'0\' AS `cuotaInicial2` from (`bdclick5`.`bdcxc` left join `bdclick5`.`bdverificadorfacturas` on((`bdclick5`.`bdcxc`.`factura2` = `bdclick5`.`bdverificadorfacturas`.`factura`))) group by `bdclick5`.`bdcxc`.`factura`,`bdclick5`.`bdcxc`.`tipo`,`bdclick5`.`bdverificadorfacturas`.`cliente`,`bdclick5`.`bdverificadorfacturas`.`factura`,`bdclick5`.`bdverificadorfacturas`.`terminal`,`bdclick5`.`bdcxc`.`estado`,\'0\' having ((`bdclick5`.`bdcxc`.`tipo` = \'ABONO\') and ((`bdclick5`.`bdcxc`.`estado` = \'pend\') or (`bdclick5`.`bdcxc`.`estado` = \'cancelada\') or (`bdclick5`.`bdcxc`.`estado` = \'\') or (`bdclick5`.`bdcxc`.`estado` = \'ABONO-REALIZADO\'))))
+mariadb-version=100135

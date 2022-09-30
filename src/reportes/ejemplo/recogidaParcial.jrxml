@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="239" pageHeight="802" columnWidth="219" leftMargin="10" rightMargin="10" topMargin="0" bottomMargin="0" uuid="42082e5f-c5f8-4569-aa99-9ededf9b0aea">
+	<property name="ireport.zoom" value="2.143588810000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="info" class="java.lang.String"/>
+	<parameter name="urlImagen" class="java.io.InputStream"/>
+	<parameter name="fecha" class="java.lang.String"/>
+	<parameter name="usuario" class="java.lang.String"/>
+	<parameter name="terminal" class="java.lang.String"/>
+	<parameter name="valor" class="java.lang.String"/>
+	<parameter name="valorAntes" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="382" splitType="Stretch">
+			<textField>
+				<reportElement x="17" y="84" width="188" height="76" uuid="372c1f1e-9549-40f4-8de0-6c66c5060127"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{info}]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="46" y="7" width="133" height="77" uuid="11df802a-47f2-419c-9a3a-5ac81028e472"/>
+				<imageExpression><![CDATA[$P{urlImagen}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="16" y="168" width="189" height="15" uuid="881034db-5ba2-46af-9dfd-5e8244fe73a3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Recogida Parcial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="191" width="70" height="15" uuid="6ac55055-8168-403f-8076-e9c2168ef35d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="87" y="191" width="118" height="15" uuid="e8d4f320-af39-462c-a796-9fb21ba6878c"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="17" y="206" width="70" height="15" uuid="2772f3f5-406b-403a-967b-03680a6ccf31"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Usuario:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="221" width="70" height="15" uuid="f813f246-8e6f-4415-a255-beaf1eae0a40"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Terminal:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="268" width="83" height="18" uuid="2265a573-d4f2-49a3-8f04-11b3ee15cf33"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor: ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="5" y="244" width="210" height="1" uuid="d4515fa0-91a5-448a-bc8e-c6bc93102e4c"/>
+			</line>
+			<textField>
+				<reportElement x="87" y="206" width="118" height="15" uuid="58e5e8cb-7b55-4251-89a7-6b2f0dbf030c"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{usuario}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="40" y="342" width="128" height="1" uuid="63e4fa0e-d091-4987-af49-58476e870726"/>
+			</line>
+			<textField>
+				<reportElement x="87" y="221" width="118" height="15" uuid="c9a1047e-3baf-4351-ad47-30b18467722b"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{terminal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="268" width="118" height="18" uuid="02377ae9-3c42-4324-b463-4a7729b70cd3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valor}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="343" width="128" height="13" uuid="4d1e424a-b443-4b25-a468-a4980a76588e"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="250" width="84" height="18" uuid="2ae3f371-3cbb-4085-a7d8-88585f638914"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Anterior: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="250" width="118" height="18" uuid="04fa7f50-efaf-46fb-a20b-a60ff3b9e246"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAntes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

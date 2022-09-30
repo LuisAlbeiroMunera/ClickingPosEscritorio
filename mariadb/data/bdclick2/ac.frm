@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `bdclick2`.`ac2`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclick2`.`ac2`.`tipoIdentidad` AS `tipoIdentidad`,`bdclick2`.`ac2`.`Id` AS `Id`,`bdclick2`.`ac2`.`fecha` AS `fecha`,`bdclick2`.`ac2`.`autorizacion` AS `autorizacion`,`bdclick2`.`ac2`.`codConsulta` AS `codConsulta`,`bdclick2`.`ac2`.`finalidadd` AS `finalidadd`,`bdclick2`.`ac2`.`causaExterna` AS `causaExterna`,`bdclick2`.`ac2`.`cie` AS `cie`,`bdclick2`.`ac2`.`codDiagnosticoReacionado1` AS `codDiagnosticoReacionado1`,`bdclick2`.`ac2`.`codDiagnosticoReacionado2` AS `codDiagnosticoReacionado2`,`bdclick2`.`ac2`.`codDiagnosticoReacionado3` AS `codDiagnosticoReacionado3`,`bdclick2`.`ac2`.`tipoDiagnosticoPrincipal` AS `tipoDiagnosticoPrincipal`,`bdclick2`.`ac2`.`valor2` AS `valor`,`bdclick2`.`ac2`.`valorCuotaModeradora` AS `valorCuotaModeradora`,`bdclick2`.`ac2`.`valorNeto` AS `valorNeto`,`bdclick2`.`ac2`.`facturaNumero` AS `orden`,`bdclick2`.`ac2`.`estado2` AS `estado2` from `bdclick2`.`ac2`)
+md5=85a679ce2e584ff0e9970f90f7f520bf
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-13 21:37:42
+create-version=2
+source=(select `ac2`.`codPrestadorServicio` AS `codPrestadorServicio`,`ac2`.`tipoIdentidad` AS `tipoIdentidad`,`ac2`.`Id` AS `Id`,`ac2`.`fecha` AS `fecha`,`ac2`.`autorizacion` AS `autorizacion`,`ac2`.`codConsulta` AS `codConsulta`,`ac2`.`finalidadd` AS `finalidadd`,`ac2`.`causaExterna` AS `causaExterna`,`ac2`.`cie` AS `cie`,`ac2`.`codDiagnosticoReacionado1` AS `codDiagnosticoReacionado1`,`ac2`.`codDiagnosticoReacionado2` AS `codDiagnosticoReacionado2`,`ac2`.`codDiagnosticoReacionado3` AS `codDiagnosticoReacionado3`,`ac2`.`tipoDiagnosticoPrincipal` AS `tipoDiagnosticoPrincipal`,`ac2`.`valor2` AS `valor`,`ac2`.`valorCuotaModeradora` AS `valorCuotaModeradora`,`ac2`.`valorNeto` AS `valorNeto`,`ac2`.`facturaNumero` AS `orden`,`ac2`.`estado2` AS `estado2` from `ac2`)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `bdclick2`.`ac2`.`codPrestadorServicio` AS `codPrestadorServicio`,`bdclick2`.`ac2`.`tipoIdentidad` AS `tipoIdentidad`,`bdclick2`.`ac2`.`Id` AS `Id`,`bdclick2`.`ac2`.`fecha` AS `fecha`,`bdclick2`.`ac2`.`autorizacion` AS `autorizacion`,`bdclick2`.`ac2`.`codConsulta` AS `codConsulta`,`bdclick2`.`ac2`.`finalidadd` AS `finalidadd`,`bdclick2`.`ac2`.`causaExterna` AS `causaExterna`,`bdclick2`.`ac2`.`cie` AS `cie`,`bdclick2`.`ac2`.`codDiagnosticoReacionado1` AS `codDiagnosticoReacionado1`,`bdclick2`.`ac2`.`codDiagnosticoReacionado2` AS `codDiagnosticoReacionado2`,`bdclick2`.`ac2`.`codDiagnosticoReacionado3` AS `codDiagnosticoReacionado3`,`bdclick2`.`ac2`.`tipoDiagnosticoPrincipal` AS `tipoDiagnosticoPrincipal`,`bdclick2`.`ac2`.`valor2` AS `valor`,`bdclick2`.`ac2`.`valorCuotaModeradora` AS `valorCuotaModeradora`,`bdclick2`.`ac2`.`valorNeto` AS `valorNeto`,`bdclick2`.`ac2`.`facturaNumero` AS `orden`,`bdclick2`.`ac2`.`estado2` AS `estado2` from `bdclick2`.`ac2`)
+mariadb-version=100135

@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=select max(`bdclick4`.`bdponderado`.`Id`) AS `Id`,`bdclick4`.`bdponderado`.`producto` AS `producto` from `bdclick4`.`bdponderado` group by `bdclick4`.`bdponderado`.`producto`
+md5=f88285aaec6ba907a5cf86f2849dc083
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:32:33
+create-version=2
+source=select max(`bdponderado`.`Id`) AS `Id`,`bdponderado`.`producto` AS `producto` from `bdponderado` group by `bdponderado`.`producto`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select max(`bdclick4`.`bdponderado`.`Id`) AS `Id`,`bdclick4`.`bdponderado`.`producto` AS `producto` from `bdclick4`.`bdponderado` group by `bdclick4`.`bdponderado`.`producto`
+mariadb-version=100135

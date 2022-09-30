@@ -1,0 +1,1 @@
+ALTER TABLE bdfactura MODIFY vendedor VARCHAR(255);

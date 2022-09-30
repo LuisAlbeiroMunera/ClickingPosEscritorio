@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="792" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="15" bottomMargin="15" uuid="e8fa0251-9251-4331-a586-fd040f19b0e9">
+	<property name="ireport.zoom" value="1.7715610000000093"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="874"/>
+	<parameter name="informacionLegalClick" class="java.lang.String"/>
+	<parameter name="usuario" class="java.lang.String"/>
+	<parameter name="firma" class="java.io.InputStream"/>
+	<parameter name="urlImagen" class="java.io.InputStream"/>
+	<parameter name="info" class="java.lang.String"/>
+	<parameter name="pie" class="java.lang.String"/>
+	<parameter name="id" class="java.lang.String"/>
+	<parameter name="edad" class="java.lang.String"/>
+	<parameter name="fecha" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[Select * from coprologico where IdCoprologico = $P{id}]]>
+	</queryString>
+	<field name="IdCoprologico" class="java.lang.String"/>
+	<field name="cedula" class="java.lang.String"/>
+	<field name="numeroOrden" class="java.lang.String"/>
+	<field name="remitido" class="java.lang.String"/>
+	<field name="fecha" class="java.sql.Timestamp"/>
+	<field name="resultados" class="java.lang.String"/>
+	<field name="tecnica" class="java.lang.String"/>
+	<field name="observaciones" class="java.lang.String"/>
+	<field name="telefono" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="nombreEps" class="java.lang.String"/>
+	<field name="sexo" class="java.lang.String"/>
+	<field name="consistencia" class="java.lang.String"/>
+	<field name="moco" class="java.lang.String"/>
+	<field name="floraBacteriana" class="java.lang.String"/>
+	<field name="almidones" class="java.lang.String"/>
+	<field name="fibrasMusculares" class="java.lang.String"/>
+	<field name="gotasDeGasa" class="java.lang.String"/>
+	<field name="celulasVegetales" class="java.lang.String"/>
+	<field name="esporasDeHongo" class="java.lang.String"/>
+	<field name="leucocitos" class="java.lang.String"/>
+	<field name="eritrocitos" class="java.lang.String"/>
+	<field name="histoliticaTrofozoitos" class="java.lang.String"/>
+	<field name="histoliticaQuistes" class="java.lang.String"/>
+	<field name="coliTrofozoitos" class="java.lang.String"/>
+	<field name="coliQuistes" class="java.lang.String"/>
+	<field name="nanaTrofozoitos" class="java.lang.String"/>
+	<field name="nanaQuistes" class="java.lang.String"/>
+	<field name="lodamoebaTrofozoitos" class="java.lang.String"/>
+	<field name="lodamoebaQuistes" class="java.lang.String"/>
+	<field name="giardiaTrofozoitos" class="java.lang.String"/>
+	<field name="giardiaQuistes" class="java.lang.String"/>
+	<field name="trichomonaTrofozoitos" class="java.lang.String"/>
+	<field name="trichomonaQuistes" class="java.lang.String"/>
+	<field name="chilomastixTrofozoitos" class="java.lang.String"/>
+	<field name="chilomastixQuistes" class="java.lang.String"/>
+	<field name="balantidiumTrofozoitos" class="java.lang.String"/>
+	<field name="balantidiumQuistes" class="java.lang.String"/>
+	<field name="ascarisHuevos" class="java.lang.String"/>
+	<field name="ascarisInfestacion" class="java.lang.String"/>
+	<field name="tricocefalosHuevos" class="java.lang.String"/>
+	<field name="tricocefalosInfestacion" class="java.lang.String"/>
+	<field name="uncinariaHuevos" class="java.lang.String"/>
+	<field name="uncinariaInfestacion" class="java.lang.String"/>
+	<field name="teniaHuevos" class="java.lang.String"/>
+	<field name="teniaInfestacion" class="java.lang.String"/>
+	<field name="strongiloidesHuevos" class="java.lang.String"/>
+	<field name="strongiloidesInfestacion" class="java.lang.String"/>
+	<field name="larvasHuevos" class="java.lang.String"/>
+	<field name="larvasInfestacion" class="java.lang.String"/>
+	<field name="oxiurosHuevos" class="java.lang.String"/>
+	<field name="oxiurosInfestacion" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="595">
+			<textField isBlankWhenNull="true">
+				<reportElement x="107" y="122" width="156" height="12" uuid="f8c130e3-6389-4ddc-9877-1fd7d2353565"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sexo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="51" y="98" width="56" height="12" uuid="473db87c-c66d-4725-9bc8-b8109f03ed1b"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CEDULA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="122" width="56" height="12" uuid="1176249b-9928-4e98-8ab6-2d51808b5eb8"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SEXO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="110" width="56" height="12" uuid="b9813662-6245-464a-91ed-b1c2f3e42f64"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TELEFONO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="98" width="64" height="12" uuid="38375206-179f-4a42-a79a-6f6c4b627bff"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PACIENTE:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="343" y="98" width="176" height="12" uuid="c9206b15-dba1-45ee-8fad-beae05b54280"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="107" y="98" width="156" height="12" uuid="dd368f16-b9ca-49ee-ab27-32eebfde6b00"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cedula}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="51" y="134" width="56" height="12" uuid="f0295916-da2f-4c2a-934a-78fbec641eb5"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N.REGISTRO:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="107" y="110" width="156" height="12" uuid="34ea3314-99e0-472d-84be-262f87f6ada4"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="107" y="134" width="156" height="12" uuid="0e975e6b-ea63-41b8-bcf9-b0b5c92a9106"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroOrden}]]></textFieldExpression>
+			</textField>
+			<image isUsingCache="true" isLazy="true">
+				<reportElement mode="Opaque" x="18" y="2" width="164" height="91" backcolor="#FFFFFF" uuid="c8308772-890e-414c-8660-76843d6c1200"/>
+				<imageExpression><![CDATA[$P{urlImagen}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="343" y="110" width="176" height="12" uuid="d0ec6185-ce97-4b00-aa74-4cd2c6dc463c"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreEps}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="279" y="110" width="64" height="12" uuid="ab79e6ea-9c51-4b17-a759-3371731ca503"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EPS:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="343" y="122" width="176" height="12" uuid="ef9e5135-bb62-428c-80b8-da754dd37f58"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{remitido}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="279" y="122" width="64" height="12" uuid="7d00d606-f325-43fa-9b37-e8d75acd332f"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REMITIDO POR:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="134" width="64" height="12" uuid="51592f5e-99ef-457b-a2d3-c1731acb8e30"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EDAD:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="146" width="77" height="12" uuid="16362bf2-a6c5-4d2f-9c6a-384b78f0bb4d"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FECHA REGISTRO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="146" width="81" height="12" uuid="97892e62-2b00-461c-9454-c676123ae598"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FECHA IMPRESIÓN:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="208" y="2" width="279" height="93" uuid="a666b807-eaf5-4249-bc55-58bb68202aff"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+					<font fontName="Century Gothic" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{info}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="128" y="146" width="135" height="12" uuid="d56cdd93-7eb4-4286-932e-f2f915b2c860"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="343" y="134" width="176" height="12" uuid="c2dd9f8e-793a-4097-bf10-ed62a0564be4"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{edad}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="360" y="146" width="159" height="12" uuid="3aee0426-0f46-4726-8108-e1920a556225"/>
+				<textElement>
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="1" y="162" width="533" height="16" backcolor="#CCCCCC" uuid="a76fb62b-fad5-4125-9abb-5551a24af52a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COPROLOGICO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="178" width="159" height="13" backcolor="#FFFFFF" uuid="943ac8e4-6ccc-466e-b472-ffc3e327c070"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONSISTENCIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="193" width="159" height="13" backcolor="#FFFFFF" uuid="fcff3110-4aab-4812-846e-45f901441826"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MOCO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="208" width="159" height="13" backcolor="#FFFFFF" uuid="3cee99df-367a-4dde-ae52-49256c5632bc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FLORA BACTERIANA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="223" width="159" height="13" backcolor="#FFFFFF" uuid="85436059-043c-4e5d-a914-b9a886c56083"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALMIDONES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="238" width="159" height="13" backcolor="#FFFFFF" uuid="b33ccfb6-1e69-4efe-8b19-5f52a76e0450"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FIBRAS MUSCULARES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="253" width="159" height="13" backcolor="#FFFFFF" uuid="db588a84-3eb3-4064-ac9c-2e1ca5cc0069"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GOTAS DE GRASA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="268" width="159" height="13" backcolor="#FFFFFF" uuid="cca8a53b-05ba-453f-af39-ed38633fcbdd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CELULAR VEGETALES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="283" width="159" height="13" backcolor="#FFFFFF" uuid="6844d31c-7872-4370-9c4d-d0054cf4c89c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESPORAS DE HONGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="298" width="159" height="13" backcolor="#FFFFFF" uuid="5dce7b7d-585a-4832-ae21-015bc1fac6ea"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LEUCOCITOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="313" width="159" height="13" backcolor="#FFFFFF" uuid="caecce6e-d438-432c-a022-84b4069daa8b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ERITROCITOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="330" width="172" height="16" backcolor="#CCCCCC" uuid="5dd239a6-5ce7-4a68-88d0-e7272e9f4140"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROTOZOOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="172" y="330" width="181" height="16" backcolor="#CCCCCC" uuid="3fa78250-cd87-46f6-9098-f14aea0ac714"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TROFOZOITOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="353" y="330" width="181" height="16" backcolor="#CCCCCC" uuid="1b41bfdb-b80f-4458-9b10-d690459b8d6e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QUISTES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="346" width="169" height="15" backcolor="#FFFFFF" uuid="d5f5e1c7-2475-4d2c-ace3-db35fc75006c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[E. HISTOLITICA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="361" width="169" height="15" backcolor="#FFFFFF" uuid="7a71b64f-e02d-4cd5-b3de-8bec10fcae29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[E. COLI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="376" width="169" height="15" backcolor="#FFFFFF" uuid="695c0d71-610b-4d67-8151-450095a8742d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[E. NANA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="391" width="169" height="15" backcolor="#FFFFFF" uuid="39129c3c-dea2-433d-b81c-ef30ff9bc660"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LODAMOEBA B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="406" width="169" height="15" backcolor="#FFFFFF" uuid="88abc1fc-9e20-4131-90b5-a650f1e1aca5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GIARDIA L]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="421" width="169" height="15" backcolor="#FFFFFF" uuid="53f50412-b031-44c6-bdb7-24a0d5826495"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRICHOMONA H]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="436" width="169" height="15" backcolor="#FFFFFF" uuid="d069b42c-5878-45f6-81a6-524c0469cfa8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CHILOMASTIX M]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="451" width="169" height="15" backcolor="#FFFFFF" uuid="aac8f408-e773-4fad-abf7-f42ca0fd6ce4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BALANTIDIUM COLI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="470" width="172" height="16" backcolor="#CCCCCC" uuid="f8b3482a-6fcb-4327-bee3-8a4261e0acf8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HELMINTOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="353" y="470" width="181" height="16" backcolor="#CCCCCC" uuid="1251b037-33fa-4439-bc89-edef16bac42a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GRADO DE INFESTACIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="172" y="470" width="181" height="16" backcolor="#CCCCCC" uuid="dc617788-39b8-4e84-b41e-8dcab44a217f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HUEVOS /gr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="486" width="169" height="15" backcolor="#FFFFFF" uuid="8cd7b511-392a-4e1a-a541-dd5c02025382"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ASCARIS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="501" width="169" height="15" backcolor="#FFFFFF" uuid="e1809db9-b113-49ce-9c40-39885db4b7c2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TRICOCÉFALOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="516" width="169" height="15" backcolor="#FFFFFF" uuid="865a2f61-c0ed-4cde-9159-6b2b790c4163"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[UNCINARIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="531" width="169" height="15" backcolor="#FFFFFF" uuid="963f6129-a0b4-4a3c-8074-96d0d710b008"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TENIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2" y="561" width="169" height="15" backcolor="#FFFFFF" uuid="93e7b2cb-90f0-4073-9b81-037f83c3a545"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[LARVAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2" y="576" width="169" height="15" backcolor="#FFFFFF" uuid="09cf7b14-dc83-411c-aa85-01fff7841701"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[OXIUROS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="170" y="178" width="364" height="15" uuid="c7639902-3069-4272-a453-5977abd668ed"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{consistencia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="193" width="364" height="15" uuid="8b789c2c-c9b5-41d9-944b-4dfa31a1b803"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{moco}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="208" width="364" height="15" uuid="4a954170-e1fd-441d-b2df-565af8a47317"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{floraBacteriana}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="223" width="364" height="15" uuid="0fcc41eb-d113-43b6-8cfb-807dcb42a173"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{almidones}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="238" width="364" height="15" uuid="f1ce72ae-c189-4026-b334-ef913ad6e5a9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fibrasMusculares}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="253" width="364" height="15" uuid="0318d6fd-97bd-47b8-9d72-8d4cb67c850f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gotasDeGasa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="269" width="364" height="14" uuid="cb86c34f-c49d-4821-b066-f5ee673fa27e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{celulasVegetales}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="283" width="364" height="15" uuid="fd9c96e3-ebb6-4827-a5c4-396e202b8167"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{esporasDeHongo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="298" width="364" height="15" uuid="3780f75f-1600-4444-bbe0-55f40a8e5d13"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{leucocitos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="313" width="364" height="13" uuid="bdde0b96-1607-4ddb-8cd6-b8e2195dde33"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{eritrocitos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="346" width="181" height="15" uuid="06a28e75-877b-4585-a764-e747d28d95ca"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{histoliticaTrofozoitos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="346" width="181" height="15" uuid="5504e07d-788a-4dd9-b45d-c97848350008"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{histoliticaQuistes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="361" width="181" height="15" uuid="ee25ac11-ab7f-4380-945b-d33aa5a098da"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{coliTrofozoitos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="361" width="181" height="15" uuid="9dc7266d-4451-403f-acd9-5b8d5ebf90ce"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{coliQuistes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="376" width="181" height="15" uuid="32257591-9a99-4090-94f9-20d11e010fe4"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nanaTrofozoitos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="376" width="181" height="15" uuid="2932d020-c4f6-4ee4-bb7d-7596754db5a7"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nanaQuistes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="391" width="181" height="15" uuid="b605b020-a5a1-46c8-b7d2-b36c7d347427"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lodamoebaTrofozoitos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="391" width="181" height="15" uuid="ec69324e-bdb6-4d66-93c8-4b45dd2fe4aa"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lodamoebaQuistes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="406" width="181" height="15" uuid="e8ccce30-a1b8-4a9f-a8fa-283a6bce0692"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{giardiaTrofozoitos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="406" width="181" height="15" uuid="20a501ed-a67e-4276-bfc2-c65f18cfdc1c"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{giardiaQuistes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="421" width="181" height="15" uuid="b243ab20-5698-429c-82ea-fd569de51a76"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trichomonaTrofozoitos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="421" width="181" height="15" uuid="1c826f65-00c1-4f6f-8adf-be28ed1e5193"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trichomonaQuistes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="436" width="181" height="15" uuid="a6029cb6-0dd7-48fd-821a-78a21c4ed004"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chilomastixTrofozoitos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="436" width="181" height="15" uuid="f8a56568-d236-407b-abad-30e1d9b6e661"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chilomastixQuistes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="451" width="181" height="15" uuid="bcf3c8f1-10b5-43dc-96ee-24ed05539e9f"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{balantidiumTrofozoitos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="451" width="181" height="15" uuid="70de4619-4284-4382-b23b-9d3496afde3c"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{balantidiumQuistes}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="546" width="169" height="15" backcolor="#FFFFFF" uuid="2af578a1-3682-4a63-b5ad-7a1b86a9f2de"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[STRONGILOIDES]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="172" y="486" width="181" height="15" uuid="1d143021-97bc-4a0c-a56f-23e374dd027e"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ascarisHuevos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="486" width="181" height="15" uuid="0bda3004-8673-42e0-820c-e96457f61b4f"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ascarisInfestacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="501" width="181" height="15" uuid="4e2e88c1-4837-4e53-a16f-d0e8b86b0006"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tricocefalosHuevos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="501" width="181" height="15" uuid="efcbbe46-052a-4ea1-888b-6206daed71c9"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tricocefalosInfestacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="516" width="181" height="15" uuid="c14f9238-e5b1-48de-855e-d63f26578a38"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{uncinariaHuevos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="516" width="181" height="15" uuid="377c01a2-1c52-4945-a5d8-50f0245ac28c"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{uncinariaInfestacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="531" width="181" height="15" uuid="9bc1eda1-b6c0-4db1-9f55-9644812a3839"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teniaHuevos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="531" width="181" height="15" uuid="d19f3e31-c0b9-4e89-a00d-b6899305310b"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teniaInfestacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="546" width="181" height="15" uuid="606bd3cf-16dc-4e3f-8a88-33e3c664b906"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{strongiloidesHuevos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="546" width="181" height="15" uuid="4973450f-6ed7-49ca-a3e6-43b0978b8c14"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{strongiloidesInfestacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="561" width="181" height="15" uuid="346a6499-934a-4ded-8ab7-8c464233e814"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{larvasHuevos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="561" width="181" height="15" uuid="037ffa81-b1fe-451d-b266-dee5dfe29787"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{larvasInfestacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="576" width="181" height="15" uuid="784d7250-59ff-4da1-9b41-2c6ca296b68c"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{oxiurosHuevos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="576" width="181" height="15" uuid="e7e8fd65-61e2-4bf6-86aa-cf7fb415c9cf"/>
+				<textElement>
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{oxiurosInfestacion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="18">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="76" height="18" backcolor="#CCCCCC" uuid="ebdbf2a6-0dff-4723-947b-e342ec4719dd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TÉCNICA:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="77" y="0" width="459" height="18" uuid="840ffd9f-5d1d-407c-ab2c-26ccd1fb354f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tecnica}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="18">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="76" height="18" backcolor="#CCCCCC" uuid="b04f6003-0a65-45f8-89e1-840bbb29f166"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OBSERVACIONES:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="77" y="0" width="460" height="18" uuid="2020f745-bb34-4241-bc19-cf6ffb3b4bb1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{observaciones}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="100" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="0" y="86" width="535" height="14" uuid="f1049042-0ffe-42d0-b6a3-8f15d9a7a96b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{informacionLegalClick}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="1" y="67" width="534" height="19" uuid="e3c66132-0d29-4e95-94c8-636dd26b0ffc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic" size="6" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pie}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="343" y="51" width="181" height="1" uuid="5996dffe-06a7-4943-9fe7-4648eafa17e0"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="343" y="52" width="182" height="11" forecolor="#000000" uuid="82a5c90c-72b4-4d84-ab57-35cf21550afa"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{usuario}]]></textFieldExpression>
+			</textField>
+			<image isLazy="true">
+				<reportElement x="343" y="2" width="181" height="49" uuid="f922fd97-db45-42d1-8774-79edd7f1fd70"/>
+				<imageExpression><![CDATA[$P{firma}]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `bdclick5`.`bdfactura`.`red` AS `red`,count(`bdclick5`.`bdfactura`.`rtFuente`) AS `CuentaDertFuente`,sum(`bdclick5`.`bdfactura`.`rtFuente`) AS `SumaDertFuente` from `bdclick5`.`bdfactura` where (`bdclick5`.`bdfactura`.`rtFuente` > 0) group by `bdclick5`.`bdfactura`.`red`)
+md5=dd7a7ba21e644da083301a8a7a80ada6
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-11-22 19:46:51
+create-version=2
+source=(select `bdfactura`.`red` AS `red`,count(`bdfactura`.`rtFuente`) AS `CuentaDertFuente`,sum(`bdfactura`.`rtFuente`) AS `SumaDertFuente` from `bdfactura` where (`bdfactura`.`rtFuente` > 0) group by `bdfactura`.`red`)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `bdclick5`.`bdfactura`.`red` AS `red`,count(`bdclick5`.`bdfactura`.`rtFuente`) AS `CuentaDertFuente`,sum(`bdclick5`.`bdfactura`.`rtFuente`) AS `SumaDertFuente` from `bdclick5`.`bdfactura` where (`bdclick5`.`bdfactura`.`rtFuente` > 0) group by `bdclick5`.`bdfactura`.`red`)
+mariadb-version=100135

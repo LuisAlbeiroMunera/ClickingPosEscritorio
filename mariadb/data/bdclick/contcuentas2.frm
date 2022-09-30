@@ -1,0 +1,16 @@
+TYPE=VIEW
+query=(select `contcuentas1`.`contrato` AS `contrato`,`contcuentas1`.`total2` AS `total2` from `bdclick`.`contcuentas1` where (`contcuentas1`.`total2` <> \'\'))
+md5=11d2e78911e14664facc8e52ec79748f
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2019-09-20 15:58:23
+create-version=2
+source=(select `contcuentas1`.`contrato` AS `contrato`,`contcuentas1`.`total2` AS `total2` from `contcuentas1` where (`contcuentas1`.`total2` <> \'\'))
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `contcuentas1`.`contrato` AS `contrato`,`contcuentas1`.`total2` AS `total2` from `bdclick`.`contcuentas1` where (`contcuentas1`.`total2` <> \'\'))
+mariadb-version=100135
