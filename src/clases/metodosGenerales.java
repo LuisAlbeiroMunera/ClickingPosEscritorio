@@ -4124,7 +4124,7 @@ public class metodosGenerales {
         nodo.setEgreso((String) vector[22]);
         nodo.setModeloContable((String) vector[23]);
         nodo.setNumeroDocumentoSoporte((String) vector[24]);
-
+        
         return nodo;
     }
 

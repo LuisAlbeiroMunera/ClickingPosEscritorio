@@ -6880,12 +6880,12 @@ public class SQL {
 
     public ndEgreso getDatosEgreso(String id) {
         String instruccion_sql = "select Id, nit, razon, telefono, direccion,total,subtotal,iva, cred1, cred2, deb1, deb2,cheque, banco, efectivo, "
-                + "fecha, documento,usuario,terminal,estado,tipo, ingresoAsociado, egreso, modeloContable "
+                + "fecha, documento,usuario,terminal,estado,tipo, ingresoAsociado, egreso, modeloContable, numeroDocumentoSoporte "
                 + "from bdEgreso where Id = '" + id + "' or egreso = '" + id + "'  ;";
         //columnas de la tabla que se        
         String[] colName = {"Id", "nit", "razon", "telefono", "direccion", "total", "subtotal", "iva", "cred1", "cred2", "deb1", "deb2",
-            "cheque", "banco", "efectivo", "fecha", "documento", "usuario", "terminal", "estado", "tipo", "ingresoAsociado", "egreso", "modeloContable"};
-        boolean[] cadena = {true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true,
+            "cheque", "banco", "efectivo", "fecha", "documento", "usuario", "terminal", "estado", "tipo", "ingresoAsociado", "egreso", "modeloContable", "numeroDocumentoSoporte"};
+        boolean[] cadena = {true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true,
             true, true, true, true, true, true};
         //se realiza la consulta
         Object[] data = GetRegistro(colName, cadena, instruccion_sql);
