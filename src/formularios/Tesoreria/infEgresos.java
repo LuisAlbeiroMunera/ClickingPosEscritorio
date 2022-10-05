@@ -1285,6 +1285,7 @@ public class infEgresos extends javax.swing.JInternalFrame {
            dcSoporte=""; 
         }
         String cons =  instancias.getSql().getNumConsecutivo("EGR")[0].toString();
+        System.err.println("formularios.Tesoreria.infEgresos.guardar() variable cons" + cons);
         String factura = "EGR-" + cons;
         egreso2 = "EGR-" + prefijo +cons;
         Object[] vector = {factura, txtNit.getText(), txtRazon.getText(), txtTelefono.getText(),
