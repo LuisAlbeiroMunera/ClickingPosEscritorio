@@ -1238,8 +1238,8 @@ public class infEgresos extends javax.swing.JInternalFrame {
             cmbTipo1.setSelectedIndex(0);
         }
 
-        String cons =  instancias.getSql().getNumConsecutivo("EGR")[0].toString();
-        String factura = "EGR-" + cons;
+//        String cons =  instancias.getSql().getNumConsecutivo("EGR")[0].toString();
+//        String factura = "EGR-" + cons;
 
         //PROCESO GUARDAR REGISTRO EN CAJA
         String estado = "PENDIENTE";
@@ -1252,7 +1252,7 @@ public class infEgresos extends javax.swing.JInternalFrame {
             prefijo = instancias.getIdEgreso();
         }
 
-        egreso2 = "EGR-" + prefijo +cons;
+//        egreso2 = "EGR-" + prefijo +cons;
 
         if (instancias.getUsuario().equals("ADMIN")) {
             if (cmbTipo.getSelectedItem().equals("GENERAL")) {
@@ -1284,6 +1284,9 @@ public class infEgresos extends javax.swing.JInternalFrame {
         if (!jCheckBoxDS.isSelected()) {
            dcSoporte=""; 
         }
+        String cons =  instancias.getSql().getNumConsecutivo("EGR")[0].toString();
+        String factura = "EGR-" + cons;
+        egreso2 = "EGR-" + prefijo +cons;
         Object[] vector = {factura, txtNit.getText(), txtRazon.getText(), txtTelefono.getText(),
             txtDireccion.getText(), big.getMoneda(txtTotal.getText()), big.getMoneda(txtSubTotal.getText()), big.getMoneda(txtIVA.getText()),
             txtIdSistema.getText(), "", "", "", big.getMoneda(txtCheque.getText()),
